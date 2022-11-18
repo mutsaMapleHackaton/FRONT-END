@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" >
+    <!-- <script type="text/javascript" src="script.js"></script> -->
+    <title>Document</title>
+
+</head>
+
+<body style="margin:0 auto; background-color:#F9D692;">
+
+    <div style="position:absolute; background-color:#97704A; height:34%; width:100%; top:66%"></div>
+    <img style="position:absolute; margin-left:2%; height:85%; width:18%;left:21px; display: flex;" src="./img/fireplace.png">
+    <div class="tree">
+        <img class="treeImg" style="position:absolute; left:42%; height:86%; width:42%;" src="./img/tree.png">
+        <button type="button" onclick="div_show()" class="letter1"><img src="img/letter1.png"> </button>
+        <button type="button" onclick="div_show()" class="letter2"><img src="img/letter2.png"> </button>
+        <button type="button" onclick="div_show()" class="letter3"><img src="img/letter3.png"> </button>
+        <button type="button" onclick="div_show()" class="letter4"><img src="img/letter4.png"> </button>
+        <button type="button" onclick="div_show()" class="letter5"><img src="img/letter5.png"> </button>
+        <!-- <input type="image" src="img/letter1.png" onclick="div_show()" class="letter1" > -->
+        <!-- <input type="image" src="img/letter2.png" onclick="div_show()" class="letter2" >
+        <input type="image" src="img/letter3.png" onclick="div_show()" class="letter3" >
+        <input type="image" src="img/letter4.png" onclick="div_show()" class="letter4" >
+        <input type="image" src="img/letter5.png" onclick="div_show()" class="letter5" > -->
+    </div>
+    <div id="popup" style="display:none;">
+        <img id="letterPaper" >
+        <input type="image" src="img/hidebtn.png" onclick="div_hide()" class="hiddenbtn" >
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="crossorigin="anonymous"></script>
+
+    <script>
+         //랜덤 이미지 추출  
+         
+        
+        //보이기
+        function div_show() {
+            var imgArray=["img/letterp1.png","img/letterp2.png","img/letterp3.png","img/letterp4.png"];
+            var imgNum=Math.floor(Math.random()*3);
+            var imgChange=imgArray[imgNum];
+            $("#letterPaper").attr('src',imgChange);
+            // document.getElementById("popup").style.display = "block";
+            $("#popup").attr('style',"block");
+        }    
+        //숨기기
+        function div_hide() {
+         document.getElementById("popup").style.display = "none";
+        }
+       
+
+
+    </script>
+    
+</body>
+
+
+</html>
+<!-- <img src="./img/letter1.png"></button> -->
