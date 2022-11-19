@@ -49,10 +49,10 @@
     <div class="writeBtn" style="position:absolute">
         <input type="image" src="./img/writeLetterBtn.png" onclick="writeLetter();">
     </div> 
-    <div id="letterForm" style="display: none;"> <!--폼작성-->
-        <img class="letterFormimg" style="position:absolute"> 
-        <input type="text" class="imtext" style=" display:flex; border:2px black;">
-        <input type="image" src="img/hidebtn.png" onclick="div_hide3();" class="hiddenbtn3"> 
+    <div id="letterForm" > <!--폼작성-->
+        <!-- <img class="letterFormimg" style="position:absolute">  -->
+        <input type="text" id="imtext1" class="imtext" style="border:2px black;">
+        <input type="image" src="img/hidebtn.png" onclick="div_hide3();" id="hiddenbtn3" class="hiddenbtn3"> 
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.1.js"integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="crossorigin="anonymous"></script>
@@ -89,7 +89,7 @@
             var imgNum=Math.floor(Math.random()*3);
             var imgChange=imgArray[imgNum];
             $("#letterForm").attr('style',"block");
-            $(".letterFormimg").attr('src',imgChange);
+            $(".letterFormimg").css('background-image',imgChange);
         }
         function div_hide3() {
             document.getElementById("letterForm").style.display = "none";
