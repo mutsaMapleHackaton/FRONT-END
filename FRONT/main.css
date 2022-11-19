@@ -123,17 +123,21 @@
     
 }
 
-.imtext{
-    position: absolute;
-    margin-left:10%;
-    margin-bottom:-10%;
-}
 
 .writeBtn{
     position:absolute;
     left:80%;
 }
 .hiddenbtn3{
-    position: absolute;
-    padding-left:40%;
+    position:absolute;
+    margin-bottom:10%;
+}
+#imtext1{
+    position:absolute;
+    background-image : url('./img/letterp1.png');
+    background-repeat : no-repeat;  
+    background-size:cover;
+    width:650px;
+    height:800px;
+    overflow:hidden;
 }
