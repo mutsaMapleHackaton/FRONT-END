@@ -10,7 +10,6 @@
 }
 
 
-
 .letter1{
     border:0;
     outline: 0;
@@ -79,38 +78,45 @@
     overflow: hidden;
 }
 
-button img:hover{
+.letterbtn img:hover{
     filter: blur(2px);
     border-radius: 3.4px;
     filter: drop-shadow( 10px 15px 10px #FFFFFF);
 
 }
 
-.exbutton img:hover{
-    background-image : url("exbox.jpg");
-}
 
-#exbox p{
-    font-weight: bold;
-    font-size: 40px;
-    color: white;
-    
+#exbutton:hover{
+    filter: blur(2px);
+    border-radius: 3.4px;
+    filter: drop-shadow( 10px 15px 10px #FFFFFF);
 }
-
+  
 #exbox{
-    font-size: 20px;
+    font-size: 23px;
     color: white;
 }
 .extext{
     position: absolute;
-    left: 30%;
-    bottom: 40%;
-}
-/* 
-.extext p{
+    left: 27%;
+    bottom: 50%;
+    white-space: nowrap;
+    text-align: center;
     font-weight: bold;
-    font-size: 20px;
-} */
+    margin:0 auto;
+}
+#exbox p{
+    font-weight: bold;
+    font-size: 43px;
+    
+}
+.hiddenbtn2{
+    position: absolute;
+    left:53%;
+    bottom:42%;
+
+}
+
 #explain p{
     color: white;
     position: absolute;
