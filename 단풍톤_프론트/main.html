@@ -13,12 +13,14 @@
 
 </head>
 
-<body style=" overflow:hidden; margin:0 auto; background-color:#F9D692;">
+<body style="overflow:hidden; margin:0 auto; background-color:#F9D692;">
 
     <div style="position:absolute; background-color:#97704A; height:34%; width:100%; top:66%"></div>
+
     <img style="position:absolute; margin-left:2%; height:85%; width:18%;left:21px; display: flex;" src="{% static 'img/fireplace.png' %}">
     <input type="image" src="{% static 'img/writeLetterBtn.png' %}" style="position: absolute; left:80%; top:10%; "onclick="writeLetter();">
     </button>
+
     <div class="tree">
         <img class="treeImg" style="position:absolute; left:42%; height:86%; width:42%;" src="{% static 'img/tree.png' %}">
         <div class="letterbtn">
@@ -50,6 +52,7 @@
         <img id="letterPaper" >
         <input type="image" src="{% static 'img/hidebtn.png' %}" onclick="div_hide();" class="hiddenbtn">
     </div>
+
 
     <div id="letterForm" style="position:absolute; display: none;"> <!--폼작성-->
         <img class="letterFormimg"> 
@@ -95,7 +98,7 @@
             $(".letterFormimg").attr('src',imgChange);
         }
         function div_hide3() {
-            document.getElementById("#letterForm").style.display = "none";
+            document.getElementById("letterForm").style.display = "none";
 
         }
 
