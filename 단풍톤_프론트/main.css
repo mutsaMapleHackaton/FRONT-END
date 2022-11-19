@@ -1,0 +1,113 @@
+.treeImg{
+    margin-top: 3%;
+}
+.exbutton{
+    background: none;
+    border:0;
+    outline: 0;
+    position: absolute;
+    left:30%;
+}
+
+
+
+.letter1{
+    border:0;
+    outline: 0;
+    position:absolute;
+    left:50%;
+    bottom:43%;
+    background: none;
+}
+
+#letterPaper{
+    left:30%;
+    position: absolute;
+    height:70%;
+    width:30%;
+    left: 10%;
+    bottom:10%;
+    border-radius: 0px;
+
+}
+.hiddenbtn{
+    width:5%;
+    height:4%;
+    position:absolute;
+    bottom:20%;
+    left:22%;
+}
+.letter2{
+    border:0;
+    outline: 0;
+    position:absolute;
+    left:60%;
+    bottom:60%;
+    background: none;
+
+}
+.letter3{
+    border:0;
+    outline: 0;
+    position:absolute;
+    left:60%;
+    bottom:43%;
+    background: none;
+
+}
+.letter4{
+    border:0;
+    outline: 0;
+    position:absolute;
+    left:68%;
+    bottom:49%;
+    background: none;
+
+}
+.letter5{
+    border:0;
+    outline: 0;
+    position:absolute;
+    left:70%;
+    bottom:30%;
+    background: none;
+}
+.tree button img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+button img:hover{
+    filter: blur(2px);
+    border-radius: 3.4px;
+    filter: drop-shadow( 10px 15px 10px #FFFFFF);
+
+}
+
+.exbutton img:hover{
+    background-image : url("exbox.jpg");
+}
+
+#exbox p{
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    
+}
+
+#exbox{
+    font-size: 20px;
+    color: white;
+}
+.extext{
+    position: absolute;
+    left: 30%;
+    bottom: 40%;
+}
+/* 
+.extext p{
+    font-weight: bold;
+    font-size: 20px;
+} */
