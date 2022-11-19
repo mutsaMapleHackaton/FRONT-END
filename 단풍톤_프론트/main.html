@@ -11,12 +11,10 @@
 
 </head>
 
-<body style=" overflow:hidden; margin:0 auto; background-color:#F9D692;">
+<body style="overflow:hidden; margin:0 auto; background-color:#F9D692;">
 
     <div style="position:absolute; background-color:#97704A; height:34%; width:100%; top:66%"></div>
     <img style="position:absolute; margin-left:2%; height:85%; width:18%;left:21px; display: flex;" src="./img/fireplace.png">
-    <input type="image" src="./img/writeLetterBtn.png" style="position: absolute; left:80%; top:10%; "onclick="writeLetter();">
-    </button>
     <div class="tree">
         <img class="treeImg" style="position:absolute; left:42%; height:86%; width:42%;" src="./img/tree.png">
         <div class="letterbtn">
@@ -48,19 +46,19 @@
         <img id="letterPaper" >
         <input type="image" src="img/hidebtn.png" onclick="div_hide();" class="hiddenbtn">
     </div>
-
-    <div id="letterForm" style="position:absolute; display: none;"> <!--폼작성-->
-        <img class="letterFormimg"> 
-        <input type="text" class="imtext">
-        <input type="image" src="img/hidebtn.png" onclick="div_hide3();" class="hiddenbtn">
+    <div class="writeBtn" style="position:absolute">
+        <input type="image" src="./img/writeLetterBtn.png" onclick="writeLetter();">
+    </div> 
+    <div id="letterForm" style="display: none;"> <!--폼작성-->
+        <img class="letterFormimg" style="position:absolute"> 
+        <input type="text" class="imtext" style=" display:flex; border:2px black;">
+        <input type="image" src="img/hidebtn.png" onclick="div_hide3();" class="hiddenbtn3"> 
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.1.js"integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="crossorigin="anonymous"></script>
 
     <script>
          //랜덤 이미지 추출  
-         
-        
         //보이기
         function div_show() {
             var imgArray=["img/letterp1.png","img/letterp2.png","img/letterp3.png","img/letterp4.png"];
@@ -94,7 +92,7 @@
             $(".letterFormimg").attr('src',imgChange);
         }
         function div_hide3() {
-            document.getElementById("#letterForm").style.display = "none";
+            document.getElementById("letterForm").style.display = "none";
 
         }
 
