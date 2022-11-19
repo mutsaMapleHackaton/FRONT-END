@@ -1,6 +1,13 @@
 .treeImg{
     margin-top: 3%;
 }
+.exbutton{
+    background: none;
+    border:0;
+    outline: 0;
+    position: absolute;
+    left:30%;
+}
 
 
 .letter1{
@@ -71,12 +78,18 @@
     overflow: hidden;
 }
 
-button img:hover{
+.letterbtn img:hover{
     filter: blur(2px);
     border-radius: 3.4px;
     filter: drop-shadow( 10px 15px 10px #FFFFFF);
 
 }
 
+
+#exbutton:hover{
+    filter: blur(2px);
+    border-radius: 3.4px;
+    filter: drop-shadow( 10px 15px 10px #FFFFFF);
+}
   
 

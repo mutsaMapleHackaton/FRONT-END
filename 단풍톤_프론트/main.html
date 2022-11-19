@@ -17,17 +17,27 @@
     <img style="position:absolute; margin-left:2%; height:85%; width:18%;left:21px; display: flex;" src="./img/fireplace.png">
     <div class="tree">
         <img class="treeImg" style="position:absolute; left:42%; height:86%; width:42%;" src="./img/tree.png">
-        <button type="button" onclick="div_show()" class="letter1"><img src="img/letter1.png"> </button>
-        <button type="button" onclick="div_show()" class="letter2"><img src="img/letter2.png"> </button>
-        <button type="button" onclick="div_show()" class="letter3"><img src="img/letter3.png"> </button>
-        <button type="button" onclick="div_show()" class="letter4"><img src="img/letter4.png"> </button>
-        <button type="button" onclick="div_show()" class="letter5"><img src="img/letter5.png"> </button>
+        <div class="letterbtn">
+            <button type="button" onclick="div_show()" class="letter1"><img src="img/letter1.png"> </button>
+            <button type="button" onclick="div_show()" class="letter2"><img src="img/letter2.png"> </button>
+            <button type="button" onclick="div_show()" class="letter3"><img src="img/letter3.png"> </button>
+            <button type="button" onclick="div_show()" class="letter4"><img src="img/letter4.png"> </button>
+            <button type="button" onclick="div_show()" class="letter5"><img src="img/letter5.png"> </button>
+        </div>
+       
         <!-- <input type="image" src="img/letter1.png" onclick="div_show()" class="letter1" > -->
         <!-- <input type="image" src="img/letter2.png" onclick="div_show()" class="letter2" >
         <input type="image" src="img/letter3.png" onclick="div_show()" class="letter3" >
         <input type="image" src="img/letter4.png" onclick="div_show()" class="letter4" >
         <input type="image" src="img/letter5.png" onclick="div_show()" class="letter5" > -->
     </div>
+    <div class="ex">
+        <button type="button" id="exbutton" onMouseOut="div_hide2()" onMouseOver="div_show2()" class="exbutton" ><img src="img/exButton.png"> </button>
+    </div>
+    <div class="exbox" id="exbox" style="display:none;" >
+        <img src="/img/exbox.png" style="position:absolute;left:20%;">
+    </div>
+
     <div id="popup" style="display:none;">
         <img id="letterPaper" >
         <input type="image" src="img/hidebtn.png" onclick="div_hide()" class="hiddenbtn" >
@@ -52,6 +62,21 @@
         function div_hide() {
          document.getElementById("popup").style.display = "none";
         }
+        //ex박스 보이기
+         //보이기
+         function div_show2() {
+            // document.getElementById("popup").style.display = "block";
+            $("#exbox").attr('style',"block");
+        } 
+
+        function div_hide2() {
+             document.getElementById("popup").style.display = "block";
+             $("#exbox").attr('style',"none"); 
+          }    
+
+    //    $("#exbutton").addEventListener("onMouseOut",function(){
+    //         $("#exbox").attr('style',"none");
+    //    });
        
 
 
